@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  background-color: black;
+}
+
+div#board {
+  position: relative;
+  width: 1024px;
+  height: 863px;
+  margin: auto;
+  background: url(../../img/board.jpg) no-repeat;
+}
+
+div#messageArea {
+  font-size: 50px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: #53af13;
+}
+
+table {
+  position: absolute;
+  left: 173px;
+  top: 98px;
+  border-spacing: 0;
+}
+table td {
+  width: 96px;
+  height: 96px;
+}
+
+form {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 15px;
+  background-color: #53af13;
+}
+form input {
+  background-color: #98cf71;
+  border-color: #53af13;
+  font-size: 1em;
+}
+
+.hit {
+  background: url(../../img/ship.png) no-repeat center center;
+}
+
+.miss {
+  background: url(../../img/miss.png) no-repeat center center;
+}
